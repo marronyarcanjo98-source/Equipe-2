@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* CABEÇALHO */
+header {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 25px;
+    text-align: center;
+}
+
+header h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+    font-weight: normal;
+}
+
+/* CORPO DAS QUESTÕES */
+main {
+    background-color: white;
+    width: 80%;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px #ccc;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.numero {
+    background-color: #f2f2f2;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.topo button {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.questao {
+    margin-top: 30px;
+}
+
+/* BOTÕES DE OPÇÕES (RESPOSTAS) */
+.opcao {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+
+    display: block;
+    width: 100%;
+    text-align: left;
+    background-color: white;
+    cursor: pointer;
+
+    /* Efeito de transição suave */
+    transition: all 0.3s ease;
+}
+
+/* O Círculo das letras (A, B, C) */
+.opcao span {
+    background-color: #f4f4f4;
+    border: 1px solid #e0e0e0;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+
+    /* Centraliza a letra no meio do círculo */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 15px;
+
+    /* Efeito de transição suave */
+    transition: all 0.3s ease;
+}
+
+/* Efeito Hover (passar o rato) nas opções */
+.opcao:hover {
+    background-color: #e5c4dc;
+    border: 1px solid #8b2367;
+}
+
+.opcao:hover span {
+    background-color: #500235;
+    color: white;
+    border-color: #8b2367;
+}
+
+/* BOTÃO FINAL DE ENVIAR */
+.container-botao-final {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 60px 0;
+}
+
+.botao-enviar {
+    background-color: #8b2367;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.botao-enviar:hover {
+    background-color: #70dd0a;
+}
+
+
+/* ACRÉSCIMO: CLASSE PARA MANTER A OPÇÃO SELECIONADA FIXA */
+
+.selecionada {
+    background-color: #e5c4dc;
+    border: 1px solid #8b2367;
+}
+
+.selecionada span {
+    background-color: #500235;
+    color: white;
+    border-color: #8b2367;
+}

@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Avaliação de Aprendizado</title>
+  <link rel="stylesheet" href="inicio.css">
+  <script src="inicio.js" defer></script>
+</head>
+
+<body>
+  <header class="cabecalho">
+    <h1>SISTEMA DE AVALIAÇÃO DE APRENDIZADO</h1>
+    <h3>Desenvolvimento Web — HTML, CSS e JavaScript</h3>
+  </header>
+  <div class="layout">
+    <aside class="barra-lateral">
+      <section class="painel">
+        <span class="etiqueta">DISCIPLINA</span>
+        <h2>Desenvolvimento Web</h2>
+        <p>Pratique seus conhecimentos com avaliações organizadas por tema.</p>
+        <div class="linha-info"><span>Questionários disponíveis</span><strong id="total">6</strong></div>
+        <div class="linha-info"><span>Concluídos</span><strong id="concluidos">0</strong></div>
+        <div class="linha-info"><span>Progresso</span><strong id="porcentagem">0%</strong></div>
+        <div class="barra-progresso"><div id="preenchimento"></div></div>
+      </section>
+      <section class="painel">
+        <h2>Como funciona?</h2>
+        <p>Escolha um  tema, responda às perguntas e confira seu resultado ao finalizar.</p>
+        <p class="aviso">Os temas ainda não criados serão identificados como “Em breve”.</p>
+      </section>
+    </aside>
+    <main class="conteudo">
+      <div class="titulo-secao">
+        <div><span class="etiqueta">ÁREA DE ESTUDOS</span><h2>Lista de Temas</h2><p>Escolha uma avaliação para começar.</p></div>
+        <span class="contador">6 avaliações</span>
+      </div>
+      
+<div class="grade" id="grade-questionarios">
+
+    <article class="cartao"><span class="numero-tema">TEMA 01</span><h3>Windows</h3><div class="rodape-cartao"><span class="status disponivel">Disponível</span><a class="abrir" href="./windows/Windows.html" aria-label="Abrir tema Windows">→</a></div></article>
+
+    <article class="cartao"><span class="numero-tema">TEMA 02</span><h3>VS Code</h3><div class="rodape-cartao"><span class="status disponivel">Disponível</span><a class="abrir" href="./vcCode/vsCode.html" aria-label="Abrir tema VS Code">→</a></div></article>
+
+    <article class="cartao"><span class="numero-tema">TEMA 03</span><h3>HTML, CSS e JS</h3><div class="rodape-cartao"><span class="status disponivel">Disponível</span><a class="abrir" href="./htmlEcss/htmlEcss.html" aria-label="Abrir tema HTML CSS e JS">→</a></div></article>
+
+    <article class="cartao"><span class="numero-tema">TEMA 04</span><h3>Comando do Terminal</h3><div class="rodape-cartao"><span class="status disponivel">Disponível</span><a class="abrir" href="./ComandoDoTerminal/ComandoDoTerminal.html" aria-label="Abrir tema Comando do Terminal">→</a></div></article>
+
+    <article class="cartao"><span class="numero-tema">TEMA 05</span><h3>Lógica de Programação</h3><div class="rodape-cartao"><span class="status disponivel">Disponível</span><a class="abrir" href="./logicaProgra/logicaProgra.html" aria-label="Abrir tema Lógica de Programação">→</a></div></article>
+
+    <article class="cartao"><span class="numero-tema">TEMA 06</span><h3>React</h3><div class="rodape-cartao"><span class="status disponivel">Disponível</span><a class="abrir" href="./react/react.html" aria-label="Abrir tema React">→</a></div></article>
+
+    <article class="cartao"><span class="numero-tema">TEMA 07</span><h3>GitHub</h3><div class="rodape-cartao"><span class="status disponivel">Disponível</span><a class="abrir" href="./github/github.html" aria-label="Abrir tema GitHub">→</a></div></article>
+
+    <article class="cartao"><span class="numero-tema">TEMA 08</span><h3>Hospedagem</h3><div class="rodape-cartao"><span class="status disponivel">Disponível</span><a class="abrir" href="./hospedagem/hospedagem.html" aria-label="Abrir tema Hospedagem">→</a></div></article>
+
+</div>
+
+    </main>
+  </div>
+</body>
+</html>
